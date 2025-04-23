@@ -25,13 +25,14 @@ const ProductOverview = () => {
           ))}
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 ">
           <button className="flex items-center gap-2 px-6 my-5 py-1 border rounded"><FaFilter /> Filter</button>
           <button className="flex items-center gap-2 px-6 my-5 py-1  border rounded"><FaSearch /> Search</button>
         </div>
+        
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-14 gap-16">
         {products.map(p => (
           <div key={p.id} className="w-full overflow-hidden">
             <img src={p.image} alt={p.title} className="w-full h-72 object-contain border-2 cursor-pointer rounded" />

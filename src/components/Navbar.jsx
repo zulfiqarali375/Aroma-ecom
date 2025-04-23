@@ -32,8 +32,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <Link to="/" className="text-xl font-bold text-blue-600">
-            <img src="/images/logo.png" alt="Logo" className="h-7" />
+          <Link to="/" className="text-xl font-bold text-blue-600 ">
+            <img src="/images/logo.png" alt="Logo" className="h-6" />
           </Link>
 
           {/* Desktop Menu */}
