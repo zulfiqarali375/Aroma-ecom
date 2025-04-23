@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* .text-shippping{
+  margin-left: 50px;
+} */
+.topbar-bg-color{
+  background-color: black;
+}
+.topbar-spaces{
+  padding: 7px 20px 7px 20px;
+  cursor: pointer;
+}
+.nav-hover-eff-mob:hover{
+  background-color: aquamarine;
+  color: white;
+  border-radius: 5px;
+}
+.nav-text-style{
+  font-size: 18px;
+}
+.blog-style:hover{
+  border: 1px solid black;
+}
+
+
