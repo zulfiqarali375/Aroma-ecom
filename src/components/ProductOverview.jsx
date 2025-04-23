@@ -17,7 +17,7 @@ const ProductOverview = () => {
       <h1 className="text-3xl font-bold mb-6">PRODUCT OVERVIEW</h1>
 
       <div className="flex flex-wrap justify-between items-center mb-6">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap gap-x-4">
           {categories.map((cat, i) => (
             <button className={`text-gray-600 hover:text-black ${i === 0 && "underline font-medium"}`}>
               {cat}
@@ -25,9 +25,9 @@ const ProductOverview = () => {
           ))}
         </div>
 
-        <div className="flex gap-2 ">
-          <button className="flex items-center gap-2 px-6 my-5 py-1 border rounded"><FaFilter /> Filter</button>
-          <button className="flex items-center gap-2 px-6 my-5 py-1  border rounded"><FaSearch /> Search</button>
+        <div className="flex justify-between sm:justify-end w-full gap-2 mt-4 sm:mt-0 ">
+          <button className="flex items-center gap-2 px-6 py-1 border rounded"><FaFilter /> Filter</button>
+          <button className="flex items-center gap-2 px-6 py-1 border rounded"><FaSearch /> Search</button>
         </div>
         
       </div>
