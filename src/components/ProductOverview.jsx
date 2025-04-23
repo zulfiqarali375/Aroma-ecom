@@ -17,7 +17,7 @@ const ProductOverview = () => {
       <h1 className="text-3xl font-bold mb-6">PRODUCT OVERVIEW</h1>
 
       <div className="flex flex-wrap justify-between items-center mb-6">
-        <div className="flex gap-6">
+        <div className="flex flex-wrap">
           {categories.map((cat, i) => (
             <button className={`text-gray-600 hover:text-black ${i === 0 && "underline font-medium"}`}>
               {cat}
