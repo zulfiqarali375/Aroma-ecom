@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
 
           {/* Icon Bar */}
-          <div className="navbar-icons-style flex items-center gap-8 mobile:gap-0">
+          <div className="navbar-icons-style flex items-center gap-10 sm:gap-8">
             <Link to="/search" className="relative">
               <MagnifyingGlassIcon className="w-6 h-6 text-gray-800" />
             </Link>
