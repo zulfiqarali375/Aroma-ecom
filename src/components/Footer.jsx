@@ -9,11 +9,11 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-16">
+    <footer className="bg-gray-900 text-center text-gray-300 mt-16">
       <div className="mx-auto px-5 py-16 flex flex-col md:flex-row gap-10">
-        <div className="w-full md:w-1/4 md:text-left">
-          <img src="/images/logo.png" alt="Logo" className="h-8  md:mx-0" />
-          <p className="mt-5 text-sm text-gray-400">
+        <div className="w-full  md:w-1/4 md:text-left">
+          <img src="/images/logo.png" alt="Logo" className="h-8 m-auto  md:mx-0" />
+          <p className="mt-5 text-sm text-gray-400 mb-4">
           Fashion That Fits Your Life.
           </p>
         </div>
