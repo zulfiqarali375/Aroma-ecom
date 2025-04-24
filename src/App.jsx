@@ -5,10 +5,10 @@ import Navbar from './components/Navbar'
 import Hero from './components/hero'
 import Blogs from './components/Blogs'
 import ProductOverview from './components/ProductOverview'
+import LoadMore from './components/LoadMore'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
     <Hero/>
     <Blogs/>
     <ProductOverview/>
+    <LoadMore/>
     </>
   )
 }
