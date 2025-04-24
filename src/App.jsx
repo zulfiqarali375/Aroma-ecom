@@ -6,6 +6,7 @@ import Hero from './components/hero'
 import Blogs from './components/Blogs'
 import ProductOverview from './components/ProductOverview'
 import LoadMore from './components/LoadMore'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Blogs/>
     <ProductOverview/>
     <LoadMore/>
+    <Footer/>
     </>
   )
 }
