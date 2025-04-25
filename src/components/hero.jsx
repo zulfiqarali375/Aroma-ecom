@@ -49,8 +49,8 @@ const HeroSection = () => {
       className="w-full bg-cover bg-center flex items-center transition-all duration-1000"
       style={{ backgroundImage: `url(${slides[current]})`, height: 600 }}
     >
-      <div  className="md:w-1/2 ml-12 text-center md:text-left">
-        <p ref={textRef1} className="text-lg text-gray-700 mb-2">Men Collection 2025</p>
+      <div  className="md:w-1/2 mobile:ml-2 tablet:ml-10 desktop:ml-10 laptop:ml-20 text-center md:text-left">
+        <p ref={textRef1} className="text-lg text-gray-700  mb-2">Men Collection 2025</p>
         <h1 ref={textRef2} className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6">
           NEW ARRIVALS
         </h1>
