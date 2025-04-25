@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
 
           {/* Icon Bar */}
-          <div className="navbar-icons-style flex items-center gap-5 sm:gap-5">
+          <div className="navbar-icons-style flex items-center gap-2 mobile:ml-10">
             <Link to="/search" className="relative">
               <MagnifyingGlassIcon className="w-6 h-6 text-gray-800" />
             </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden ">
             <button onClick={toggleMenu} className="text-gray-600 ">
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-8 h-8 " />}
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-8 h-8" />}
             </button>
           </div>
         </div>
