@@ -14,7 +14,7 @@ function Footer() {
         <div className="flex-grow flex flex-wrap gap-10 justify-around">
           <div className="w-full md:w-1/4">
             <h2 className="text-lg font-semibold mb-3 text-white">Categories</h2>
-            <nav className="flex flex-col gap-2 text-sm">
+            <nav className="flex flex-col gap-2 text-sm  text-gray-400">
               <Link to="#" className="hover:text-white transition-colors duration-200">Women</Link>
               <Link to="#" className="hover:text-white transition-colors duration-200">Men</Link>
               <Link to="#" className="hover:text-white transition-colors duration-200">Shoes</Link>
@@ -23,8 +23,8 @@ function Footer() {
           </div>
 
           <div className="w-full md:w-1/4">
-            <h2 className="text-lg font-semibold mb-3 text-white">Help</h2>
-            <nav className="flex flex-col gap-2 text-sm">
+            <h2 className="text-lg font-semibold mb-3  text-white">Help</h2>
+            <nav className="flex flex-col gap-2 text-sm  text-gray-400">
               <Link to="#" className="hover:text-white transition-colors duration-200">Track Order</Link>
               <Link to="#" className="hover:text-white transition-colors duration-200">Returns</Link>
               <Link to="#" className="hover:text-white transition-colors duration-200">Shipping</Link>
