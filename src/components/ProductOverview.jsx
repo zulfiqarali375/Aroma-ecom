@@ -5,6 +5,8 @@ function ProductOverview() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All Products");
+  const [searchTerm, setSearchTerm] = useState("");
+
 
   const categories = ["All Products", "women's clothing", "men's clothing", "jewelery", "electronics"];
 
@@ -31,6 +33,28 @@ function ProductOverview() {
       setFilteredProducts(filtered);
     }
   };
+
+  // search funtion
+
+  useEffect(() => {
+    let filtered = [...products];
+  
+    if (selectedCategory !== "All Products") {
+      filtered = filtered.filter(
+        (product) =>
+          product.category.toLowerCase() === selectedCategory.toLowerCase()
+      );
+    }
+  
+    if (searchTerm.trim() !== "") {
+      filtered = filtered.filter((product) =>
+        product.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+  
+    setFilteredProducts(filtered);
+  }, [products, selectedCategory, searchTerm]);
+  
 
   return (
     <div className="w-[92%] max-w-screen-xl m-auto px-2">
@@ -83,14 +107,14 @@ function ProductOverview() {
         </div>
   
         {/* Search */}
-        <div className="flex items-center gap-2 px-4 py-2 border bg-white shadow-sm hover:shadow-md transition-all w-full sm:w-auto">
-          <FaSearch className="text-gray-500" />
-          <input
-            type="text"
-            placeholder="Item Search Here..."
-            className="w-full sm:w-40 md:w-60 bg-transparent outline-none text-gray-700 placeholder-gray-400"
-          />
-        </div>
+        <input
+  type="text"
+  placeholder="Item Search Here..."
+  value={searchTerm}
+  onChange={(e) => setSearchTerm(e.target.value)}
+  className="w-full sm:w-40 md:w-60 bg-transparent outline-none text-gray-700 placeholder-gray-400"
+/>
+
   
       </div>
     </div>
