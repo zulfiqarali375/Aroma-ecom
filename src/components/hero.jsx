@@ -32,7 +32,7 @@ const HeroSection = () => {
         textRef3.current,
         { y: 100, opacity: 0, rotate: 5 },
         { y: 0, opacity: 1, rotate: 0, duration: 1, ease: "back.out(1.7)" },
-        "-=0.4"
+        "-=0.5"
       );
   }, []);
 
