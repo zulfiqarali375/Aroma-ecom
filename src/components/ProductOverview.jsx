@@ -107,13 +107,18 @@ function ProductOverview() {
         </div>
   
         {/* Search */}
-        <input
-  type="text"
-  placeholder="Item Search Here..."
-  value={searchTerm}
-  onChange={(e) => setSearchTerm(e.target.value)}
-  className="w-full sm:w-40 md:w-60 bg-transparent outline-none text-gray-700 placeholder-gray-400"
-/>
+        
+        <div className="flex items-center gap-2 px-2 border bg-white shadow-sm hover:shadow-md transition-all w-full sm:w-auto">
+  <FaSearch className="text-gray-500" />
+  <input
+    type="text"
+    placeholder="Item Search Here..."
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    className="w-full sm:w-40 md:w-60 h-9 bg-transparent outline-none text-gray-700 placeholder-gray-400"
+  />
+</div>
+
 
   
       </div>
