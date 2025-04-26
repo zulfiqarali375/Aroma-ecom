@@ -41,7 +41,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="bg-gray-800 border-t border-gray-700  py-3 px-5 ">
+      <div className="bg-gray-800 border-t border-gray-700  py-5 px-5 ">
         <div className="max-w-screen-xl mx-auto w-[96%] flex justify-between flex-wrap items-center text-center">
           <p className="text-sm text-gray-400 text-center sm:text-left">
             © 2025 Aroma Store
