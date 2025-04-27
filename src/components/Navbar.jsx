@@ -74,7 +74,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white px-4 pb-4 text-center space-y-2">
           <Link to="/" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/about" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/Shop" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Shop</Link>
           <Link to="/services" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Services</Link>
           <Link to="/contact" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
