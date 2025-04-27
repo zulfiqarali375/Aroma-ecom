@@ -40,8 +40,7 @@ const Navbar = () => {
           <div className="hidden md:flex m-auto space-x-6">
             <Link to="/" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Home</Link>
             <Link to="/Shop" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Shop</Link>
-            <Link to="/features" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Features</Link>
-            <Link to="/blog" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Blog</Link>
+            <Link to="/BlogSection" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Blog</Link>
             <Link to="/about" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">About</Link>
             <Link to="/contact" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Contact</Link>
           </div>
@@ -75,8 +74,10 @@ const Navbar = () => {
         <div className="md:hidden bg-white px-4 pb-4 text-center space-y-2">
           <Link to="/" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/Shop" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Shop</Link>
-          <Link to="/services" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link to="/BlogSection" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Blog</Link>
+          <Link to="/contact" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/contact" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
+
         </div>
       )}
 

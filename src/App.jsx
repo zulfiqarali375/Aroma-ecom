@@ -8,6 +8,7 @@ import ProductOverview from "./components/ProductOverview";
 import LoadMore from "./components/LoadMore";
 import Footer from "./components/Footer";
 import Shop from "./components/Shop"; // <-- Import your Shop component
+import BlogSection from "./components/BlogSection";
 
 function App() {
   return (
@@ -26,9 +27,11 @@ function App() {
         } />
         
         <Route path="/Shop" element={<Shop />} />
+        <Route path="/BlogSection" element={<BlogSection />} />
+
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
