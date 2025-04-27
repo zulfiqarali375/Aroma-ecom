@@ -38,12 +38,12 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex m-auto space-x-6">
-            <Link to="/" className=" nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Home</Link>
-            <Link to="/about" className=" nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Shop</Link>
-            <Link to="/services" className=" nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Features</Link>
-            <Link to="/contact" className=" nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Blog</Link>
-            <Link to="/contact" className=" nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">About</Link>
-            <Link to="/contact" className=" nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Contact</Link>
+            <Link to="/" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Home</Link>
+            <Link to="/Shop" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Shop</Link>
+            <Link to="/features" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Features</Link>
+            <Link to="/blog" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Blog</Link>
+            <Link to="/about" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">About</Link>
+            <Link to="/contact" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Contact</Link>
           </div>
 
           {/* Icon Bar */}
