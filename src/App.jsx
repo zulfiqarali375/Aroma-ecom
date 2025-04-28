@@ -9,6 +9,7 @@ import LoadMore from "./components/LoadMore";
 import Footer from "./components/Footer";
 import Shop from "./components/Shop"; // <-- Import your Shop component
 import BlogSection from "./components/BlogSection";
+import About from "./components/About";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         
         <Route path="/Shop" element={<Shop />} />
         <Route path="/BlogSection" element={<BlogSection />} />
+        <Route path="/About" element={<About />} />
+
+
 
       </Routes>
 

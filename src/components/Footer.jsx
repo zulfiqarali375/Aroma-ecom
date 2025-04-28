@@ -44,15 +44,7 @@ function Footer() {
       <div className="bg-gray-800 border-t border-gray-700  py-5 px-5 ">
         <div className="max-w-screen-xl mx-auto w-[96%] flex justify-between flex-wrap items-center text-center">
           <p className="text-sm text-gray-400 text-center sm:text-left">
-            © 2025 Aroma Store
-            <a
-              href="https://twitter.com/zulfiqarali375"
-              className="text-gray-300 hover:text-white transition-colors duration-200 ml-1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            
-            </a>
+            Developed by Zulfiqar Brohi
           </p>
 
           <div className="flex sm:mt-0 space-x-4 justify-center ">

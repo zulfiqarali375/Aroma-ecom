@@ -133,10 +133,42 @@ function BlogSection() {
           </div>
 
           {/* Archive */}
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold mb-5">Archive</h2>
-            <p className="text-gray-600">Coming Soon...</p>
+          <h2 className="text-2xl font-bold mt-10 mb-5">Archive</h2>
+          <div className="flex flex-col space-y-3">
+            <div className="flex justify-between text-gray-600">
+              <p>January 2025</p>
+              <p>(9)</p>
+            </div>
+            <div className="flex justify-between text-gray-600">
+              <p>February 2025</p>
+              <p>(7)</p>
+            </div>
+            <div className="flex justify-between text-gray-600">
+              <p>March 2025</p>
+              <p>(5)</p>
+            </div>
+            <div className="flex justify-between text-gray-600">
+              <p>April 2025</p>
+              <p>(8)</p>
+            </div>
           </div>
+
+          {/* TAGS */}
+          <h2 className="text-2xl font-bold mt-20 mb-5">Tags</h2>
+          <div className=" space-y-3">
+
+            <div className="flex gap-3 text-gray-600">
+              <p className="border p-2 ">Fashion</p>
+              <p className="border p-2 ">Lifestyle</p>
+              <p className="border p-2 ">Denim</p>
+              <p className="border p-2 ">Streetstyle</p>
+              <p className="border p-2 ">Crafts</p>
+
+
+            </div>
+            
+          </div>
+          
         </div>
       </div>
     </>
