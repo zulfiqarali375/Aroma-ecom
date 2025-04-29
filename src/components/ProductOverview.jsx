@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { FaFilter, FaSearch } from "react-icons/fa";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
+
 
 function ProductOverview() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All Products");
   const [searchTerm, setSearchTerm] = useState("");
+
+  // const [heart, Setheart]=useState();
+  
 
 
   const categories = ["All Products", "women's clothing", "men's clothing", "jewelery", "electronics"];

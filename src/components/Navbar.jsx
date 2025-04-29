@@ -13,6 +13,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const [isCartOpen, setIsCartOpen] = useState(false); // کارٹ کے کھلنے/بند ہونے کا کنٹرول
+const [isWishlistOpen, setIsWishlistOpen] = useState(false); // وش لسٹ کے کھلنے/بند ہونے کا کنٹرول
+
+
   useEffect(() => {
     gsap.fromTo(
       ".nav-hover-eff-desk",
@@ -47,18 +51,60 @@ const Navbar = () => {
 
           {/* Icon Bar */}
           <div className="navbar-icons-style flex items-center gap-3 mobile:ml-14">
-            <Link to="/search" className="relative">
-              <MagnifyingGlassIcon className="w-6 h-6 text-gray-800" />
-            </Link>
-            <Link to="/cart" className="relative">
-              <ShoppingCartIcon className="w-6 h-6 text-gray-800" />
-              <span className="absolute -top-2 -right-3 bg-blue-500 text-white text-xs font-bold px-1.5 rounded-full">2</span>
-            </Link>
-            <Link to="/wishlist" className="relative">
-              <HeartIcon className="w-6 h-6 text-gray-800" />
-              <span className="absolute -top-2 -right-3 bg-blue-500 text-white text-xs font-bold px-1.5 rounded-full">0</span>
-            </Link>
-          </div>
+
+{/* سرچ آئیکون */}
+<button onClick={() => {}} className="relative">
+  <MagnifyingGlassIcon className="w-6 h-6 text-gray-800" />
+</button>
+
+{/* کارٹ آئیکون */}
+<button onClick={() => setIsCartOpen(true)} className="relative">
+  <ShoppingCartIcon className="w-6 h-6 text-gray-800" />
+  <span className="absolute -top-2 -right-3 bg-blue-500 text-white text-xs font-bold px-1.5 rounded-full">2</span>
+</button>
+
+{/* وش لسٹ آئیکون */}
+<button onClick={() => setIsWishlistOpen(true)} className="relative">
+  <HeartIcon className="w-6 h-6 text-gray-800" />
+  <span className="absolute -top-2 -right-3 bg-blue-500 text-white text-xs font-bold px-1.5 rounded-full">0</span>
+</button>
+
+</div>
+
+
+{/* Overlay */}
+{(isCartOpen || isWishlistOpen) && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-30 z-40"
+    onClick={() => {
+      setIsCartOpen(false);
+      setIsWishlistOpen(false);
+    }}
+  ></div>
+)}
+
+{/* Cart Drawer */}
+{isCartOpen && (
+  <div className="fixed top-0 right-0 w-80 h-full bg-white z-50 shadow-lg p-4">
+    <div className="flex justify-between items-center mb-4">
+      <h2 className="text-xl font-bold">Your Cart</h2>
+      <button onClick={() => setIsCartOpen(false)} className="text-xl">&times;</button>
+    </div>
+    <p className="text-gray-600">Cart is empty.</p>
+  </div>
+)}
+
+{/* Wishlist Drawer */}
+{isWishlistOpen && (
+  <div className="fixed top-0 right-0 w-80 h-full bg-white z-50 shadow-lg p-4">
+    <div className="flex justify-between items-center mb-4">
+      <h2 className="text-xl font-bold">Your Wishlist</h2>
+      <button onClick={() => setIsWishlistOpen(false)} className="text-xl">&times;</button>
+    </div>
+    <p className="text-gray-600">Wishlist is empty.</p>
+  </div>
+)}
+
 
           {/* Mobile Menu Button */}
           <div className="md:hidden ">
@@ -75,7 +121,7 @@ const Navbar = () => {
           <Link to="/" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/Shop" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Shop</Link>
           <Link to="/BlogSection" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Blog</Link>
-          <Link to="/contact" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/About" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/contact" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
 
         </div>
