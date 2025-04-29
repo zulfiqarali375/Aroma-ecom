@@ -8,7 +8,7 @@ function About() {
         className="w-full h-60 bg-cover bg-center brightness-75 flex items-center justify-center"
         style={{ backgroundImage: "url('/images/gallery-02.jpg')" }}
       >
-        <h1 className="font-bold text-5xl md:text-7xl text-white">Abou</h1>
+        <h1 className="font-bold text-5xl md:text-7xl text-white">About</h1>
       </div>
 
       <div className="flex flex-wrap justify-between items-start w-[90%] mx-auto mt-20">
