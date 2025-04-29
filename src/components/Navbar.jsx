@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link to="/" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Home</Link>
             <Link to="/Shop" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Shop</Link>
             <Link to="/BlogSection" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Blog</Link>
-            <Link to="/about" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">About</Link>
+            <Link to="/About" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">About</Link>
             <Link to="/contact" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Contact</Link>
           </div>
 
