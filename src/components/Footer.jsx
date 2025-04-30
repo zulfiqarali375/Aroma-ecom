@@ -7,8 +7,8 @@ function Footer() {
     <footer className="bg-gray-900 text-gray-300 mt-16 text-center">
       <div className="max-w-screen-xl mx-auto px-5 py-16 flex flex-col md:flex-row gap-10">
         <div className="w-full md:w-1/4 text-center md:text-left">
-          <img src="/images/logo.png" alt="Logo" className="h-8 mx-auto md:mx-0" />
-          <p className="mt-5 text-sm text-gray-400">Fashion That Fits Your Life.</p>
+          <img src="/images/logo11.png" alt="Logo" className="h-32 mx-auto md:mx-0" />
+          <p className=" text-sm -mt-12 text-gray-400">Fashion That Fits Your Life.</p>
         </div>
 
         <div className="flex-grow flex flex-wrap gap-10 justify-around">
