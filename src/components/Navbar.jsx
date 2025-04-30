@@ -46,7 +46,7 @@ const [isWishlistOpen, setIsWishlistOpen] = useState(false); // وش لسٹ کے
             <Link to="/Shop" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Shop</Link>
             <Link to="/BlogSection" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Blog</Link>
             <Link to="/About" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">About</Link>
-            <Link to="/contact" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Contact</Link>
+            <Link to="/Contact" className="nav-text-style nav-hover-eff-desk text-gray-600 hover:text-blue-600">Contact</Link>
           </div>
 
           {/* Icon Bar */}
@@ -122,7 +122,7 @@ const [isWishlistOpen, setIsWishlistOpen] = useState(false); // وش لسٹ کے
           <Link to="/Shop" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Shop</Link>
           <Link to="/BlogSection" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Blog</Link>
           <Link to="/About" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
-          <Link to="/contact" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/Contact" className="nav-hover-eff-mob block text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
 
         </div>
       )}
