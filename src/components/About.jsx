@@ -5,47 +5,74 @@ function About() {
     <div>
       {/* Banner */}
       <div
-        className="w-full h-60 min-h-[15rem] bg-cover bg-center bg-black flex items-center justify-center"
+        className="relative w-full h-60 min-h-[15rem] bg-cover bg-center brightness-75 bg-black flex items-center justify-center overflow-hidden"
         style={{ backgroundImage: "url('/images/gallery-02.jpg')" }}
       >
-        <h1 className="font-bold text-5xl md:text-7xl text-white">About</h1>
+        {/* Gradient overlay animation */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 animate-pulse-slow"></div>
+        <h1 className="relative font-bold text-5xl md:text-7xl text-white animate-fade-down">About</h1>
       </div>
 
       {/* Content Section */}
       <div className="flex flex-wrap justify-between items-start w-[90%] mx-auto mt-20">
         {/* Text Content */}
-        <div className="w-full md:w-[55%] mb-6">
-          <h2 className="font-bold text-3xl mb-6">Our Story</h2>
-          <p className="text-gray-600 leading-relaxed">
+        <div className="w-full md:w-[55%] mb-6 animate-fade-right">
+          <h2 className="font-bold text-3xl mb-6 text-gray-800">Our Story</h2>
+          <p className="text-gray-600 leading-relaxed text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            consequat consequat enim, non auctor massa ultrices non. Morbi sed
-            odio massa. Quisque at vehicula tellus, sed tincidunt augue. Orci
-            varius natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Maecenas varius egestas diam, eu sodales metus
-            scelerisque congue. Pellentesque habitant morbi tristique senectus
-            et netus et malesuada fames ac turpis egestas. Maecenas gravida
-            justo eu arcu egestas convallis. Nullam eu erat bibendum, tempus
-            ipsum eget, dictum enim. Donec non neque ut enim dapibus tincidunt
-            vitae nec augue. Suspendisse potenti. Proin ut est diam. Donec
-            condimentum euismod tortor, eget facilisis diam faucibus et. Morbi a
-            tempor elit. Donec gravida lorem elit, quis condimentum ex semper
-            sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet
+            consequat consequat enim, sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet
             sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque
             congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis
-            lectus a arcu facilisis, eu sodales lectus sagittis. Etiam
-            pellentesque, magna vel dictum rutrum, neque justo eleifend elit,
-            vel tincidunt erat arcu ut sem. Sed rutrum, turpis ut commodo
-            efficitur, quam velit convallis ipsum, et maximus enim ligula ac
-            ligula.
+            lectus a arcu facilisis.sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet
+            sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque
+            congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis
+            lectus a arcu facilisis.sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet
+            sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque
+            congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis
+            lectus a arcu facilisis.sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet
+            sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque
+            congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis
+            lectus a arcu facilisis. non auctor massa ultrices non.
           </p>
         </div>
 
         {/* Image Section */}
-        <div className="relative w-full md:w-[40%] h-96 overflow-hidden rounded-xl shadow-lg mb-6 md:mb-0">
+        <div className="relative w-full md:w-[40%] h-96 overflow-hidden rounded-xl shadow-lg mb-6 md:mb-0 group animate-fade-left">
           <div
-            className="w-full h-full bg-cover bg-center transform transition-transform duration-700 hover:scale-110"
+            className="w-full h-full bg-cover bg-center transform transition-transform duration-700 ease-in-out group-hover:scale-110 group-hover:rotate-2"
             style={{ backgroundImage: "url('/images/gallery-04.jpg')" }}
           ></div>
+        </div>
+      </div>
+
+      {/* Content Section 2 */}
+      <div className="flex flex-wrap justify-between items-start w-[90%] mx-auto mt-24">
+        {/* Image Section */}
+        <div className="relative w-full md:w-[40%] h-96 overflow-hidden rounded-xl shadow-lg mb-6 md:mb-0 group animate-fade-left">
+          <div
+            className="w-full h-full bg-cover bg-center transform transition-transform duration-700 ease-in-out group-hover:scale-110 group-hover:-rotate-2"
+            style={{ backgroundImage: "url('/images/gallery-08.jpg')" }}
+          ></div>
+        </div>
+
+        {/* Text Content */}
+        <div className="w-full md:w-[55%] mb-6 animate-fade-right">
+          <h2 className="font-bold text-3xl mb-6 text-gray-800">Our Mission</h2>
+          <p className="text-gray-600 leading-relaxed text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            consequat consequat enim, non auctor massa ultrices non. ...lorem sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet
+            sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque
+            congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis
+            lectus a arcu facilisis.sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet
+            sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque
+            congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis
+            lectus a arcu facilisis.
+          </p>
+          <p className="text-gray-600 leading-relaxed mt-5 italic text-lg">
+            "Creativity is just connecting things. When you ask creative people how they did something, 
+            they feel a little guilty because they didn't really do it, they just saw something. 
+            It seemed obvious to them after a while." <br />- Steve Jobs
+          </p>
         </div>
       </div>
     </div>

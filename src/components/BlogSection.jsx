@@ -90,20 +90,6 @@ function BlogSection() {
             </div>
           </div>
 
-          {/* Featured Products */}
-          {/* <div className="mb-10">
-            <h2 className="text-2xl font-bold mb-5">Featured Products</h2>
-              <div key={index} className="flex items-center gap-4 mb-6">
-                <img
-                  src="/images/product-03.jpg"
-                  alt="Product"
-                />
-                <div className="text-sm">
-                  <p className="font-semibold">White Shirt With Pleat Details Black</p>
-                  <p className="text-blue-600">$19.00</p>
-                </div>
-              </div>
-          </div> */}
           <div className="flex gap-5 mb-8 h-24">
             <img src="/images/product-03.jpg" alt="Product" />
             <div className="text-sm">
@@ -162,7 +148,6 @@ function BlogSection() {
               <p className="border p-2 ">Lifestyle</p>
               <p className="border p-2 ">Denim</p>
               <p className="border p-2 ">Streetstyle</p>
-              <p className="border p-2 ">Crafts</p>
 
 
             </div>
