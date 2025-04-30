@@ -32,11 +32,11 @@ const [isWishlistOpen, setIsWishlistOpen] = useState(false); // وش لسٹ کے
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 z-50  bg-white shadow-md">
+      <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <Link to="/" className="text-xl mt-2 font-bold text-blue-600 ">
+          <Link to="/" className="text-xl mt-2 -ml-4 font-bold text-blue-600 ">
             <img src="/images/logo11.png" alt="Logo" className="h-32" />
           </Link>
 
